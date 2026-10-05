@@ -1,0 +1,508 @@
+[0m20:12:53.663924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058a9c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a0fd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a0cd10>]}
+
+
+============================== 20:12:53.679058 | fb4594a4-f89f-43cf-901d-4336676fe837 ==============================
+[0m20:12:53.679058 [info ] [MainThread]: Running with dbt=1.12.5
+[0m20:12:53.679346 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_path': 'logs', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'printer_width': '80', 'no_print': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'empty': 'None', 'invocation_command': 'dbt init', 'log_format': 'default', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'debug': 'False', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'hints_enabled': 'True'}
+[0m20:12:53.707501 [info ] [MainThread]: Creating dbt configuration folder at /Users/sakshigajanashinde/.dbt
+[0m20:13:01.833704 [debug] [MainThread]: Starter project path: /Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:13:01.850812 [info ] [MainThread]: Setting up your profile.
+[0m20:13:10.360559 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:13:10.360928 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:13:10.361062 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:21:57.957441 [info ] [MainThread]: Profile walmart_pro written to /Users/sakshigajanashinde/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m20:21:57.974537 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m20:21:57.976058 [info ] [MainThread]: dbt version: 1.12.5
+[0m20:21:57.976280 [info ] [MainThread]: python version: 3.11.0
+[0m20:21:57.976434 [info ] [MainThread]: python path: /Users/sakshigajanashinde/Dbt_pro/.venv/bin/python
+[0m20:21:57.976606 [info ] [MainThread]: os info: macOS-26.7.1-arm64-arm-64bit
+[0m20:21:58.012192 [info ] [MainThread]: Using profiles dir at /Users/sakshigajanashinde/.dbt
+[0m20:21:58.012497 [info ] [MainThread]: Using profiles.yml file at /Users/sakshigajanashinde/.dbt/profiles.yml
+[0m20:21:58.012623 [info ] [MainThread]: Using dbt_project.yml file at /Users/sakshigajanashinde/Dbt_pro/walmart_pro/dbt_project.yml
+[0m20:21:58.012745 [info ] [MainThread]: adapter type: databricks
+[0m20:21:58.012855 [info ] [MainThread]: adapter version: 1.12.6
+[0m20:21:58.053953 [info ] [MainThread]: Configuration:
+[0m20:21:58.054211 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:21:58.054341 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:21:58.054450 [info ] [MainThread]: Required dependencies:
+[0m20:21:58.054830 [debug] [MainThread]: Executing "git --help"
+[0m20:21:58.074602 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:21:58.075069 [debug] [MainThread]: STDERR: "b''"
+[0m20:21:58.075240 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:21:58.075383 [info ] [MainThread]: Connection:
+[0m20:21:58.075556 [info ] [MainThread]:   host: dbc-af667d42-1145.cloud.databricks.com
+[0m20:21:58.075668 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/19313bf19e28003c
+[0m20:21:58.075772 [info ] [MainThread]:   catalog: walmart
+[0m20:21:58.075872 [info ] [MainThread]:   schema: dbt_schema
+[0m20:21:58.076176 [info ] [MainThread]: Registered adapter: databricks=1.12.6
+[0m20:21:58.671420 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m20:21:58.671672 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m20:21:59.881489 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m20:21:59.882293 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m20:21:59.882727 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m20:21:59.883148 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m20:21:59.883725 [debug] [MainThread]: Using databricks connection "debug"
+[0m20:21:59.884120 [debug] [MainThread]: On debug: select 1 as id
+[0m20:21:59.884445 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:25:23.262594 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m20:25:23.291214 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 364, in run
+    debug_success = self._run_debug()
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 297, in _run_debug
+    return debug_task.run()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/impl.py", line 1193, in debug_query
+    self.execute("select 1 as id")
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/impl.py", line 534, in execute
+    return super().execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 523, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 384, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 356, in add_query
+    handle: DatabricksHandle = connection.handle
+                               ^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 536, in open
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 511, in connect
+    conn = DatabricksHandle.from_connection_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/handle.py", line 280, in from_connection_args
+    conn = dbsql.connect(**conn_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/__init__.py", line 93, in connect
+    return Connection(server_hostname, http_path, access_token, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/client.py", line 332, in __init__
+    self.session.open()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/session.py", line 302, in open
+    self._session_id = self.backend.open_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 603, in open_session
+    response = self.make_request(self._client.OpenSession, open_session_req)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 516, in make_request
+    response_or_error_info = attempt_request(attempt)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 422, in attempt_request
+    response = method(request)
+               ^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 204, in OpenSession
+    self.send_OpenSession(req)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 213, in send_OpenSession
+    self._oprot.trans.flush()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/auth/thrift_http_client.py", line 195, in flush
+    self.__resp = self.__pool.request(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  [Previous line repeated 4 more times]
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 850, in urlopen
+    retries.sleep()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 399, in sleep
+    self._sleep_backoff()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 383, in _sleep_backoff
+    time.sleep(backoff)
+KeyboardInterrupt
+
+[0m20:25:23.756620 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 750.1355, "process_in_blocks": "0", "process_kernel_time": 0.78424, "process_mem_max_rss": "320045056", "process_out_blocks": "0", "process_user_time": 2.89218}
+[0m20:25:23.758913 [debug] [MainThread]: Command `dbt init` failed at 20:25:23.758777 after 750.14 seconds
+[0m20:25:23.759828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058b0190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10597fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1354697d0>]}
+[0m20:25:23.760518 [debug] [MainThread]: Flushing usage events
+[0m20:25:24.915252 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:25:34.082589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1020cac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ed2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ef3150>]}
+
+
+============================== 20:25:34.084895 | d6c4b6f0-b170-453e-a5fe-efbaf132ce8a ==============================
+[0m20:25:34.084895 [info ] [MainThread]: Running with dbt=1.12.5
+[0m20:25:34.085164 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'static_parser': 'True', 'printer_width': '80', 'version_check': 'True', 'invocation_command': 'dbt init', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'quiet': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'empty': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'no_print': 'None', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'log_path': 'logs', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'introspect': 'True', 'maximum_seed_size_mib': '1'}
+[0m20:25:57.893009 [debug] [MainThread]: Starter project path: /Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:25:57.907187 [info ] [MainThread]: Setting up your profile.
+[0m20:26:02.948903 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:26:02.949149 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:26:02.949277 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:27:17.366138 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m20:27:17.381882 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 363, in run
+    self.setup_profile(profile_name)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 132, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/click/termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/click/termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:27:17.390713 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 103.36043, "process_in_blocks": "0", "process_kernel_time": 0.282568, "process_mem_max_rss": "237912064", "process_out_blocks": "0", "process_user_time": 1.194153}
+[0m20:27:17.394021 [debug] [MainThread]: Command `dbt init` failed at 20:27:17.393810 after 103.36 seconds
+[0m20:27:17.395151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e46990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d6c810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2f150>]}
+[0m20:27:17.396801 [debug] [MainThread]: Flushing usage events
+[0m20:27:18.558855 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:29:39.816171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c1c2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c1fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cdb650>]}
+
+
+============================== 20:29:39.818584 | 169e3e0a-b74e-470a-b0e9-0f247ef4079f ==============================
+[0m20:29:39.818584 [info ] [MainThread]: Running with dbt=1.12.5
+[0m20:29:39.818867 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'empty': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'log_path': 'logs', 'warn_error': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'printer_width': '80', 'write_json': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'debug': 'False', 'invocation_command': 'dbt init', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m20:29:52.791451 [debug] [MainThread]: Starter project path: /Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:29:52.806453 [info ] [MainThread]: Setting up your profile.
+[0m20:30:08.175096 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:30:08.175466 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:30:08.175620 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:34:37.002403 [info ] [MainThread]: Profile walmart_pro written to /Users/sakshigajanashinde/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m20:34:37.012454 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m20:34:37.013756 [info ] [MainThread]: dbt version: 1.12.5
+[0m20:34:37.013996 [info ] [MainThread]: python version: 3.11.0
+[0m20:34:37.014181 [info ] [MainThread]: python path: /Users/sakshigajanashinde/Dbt_pro/.venv/bin/python
+[0m20:34:37.014412 [info ] [MainThread]: os info: macOS-26.7.1-arm64-arm-64bit
+[0m20:34:37.049719 [info ] [MainThread]: Using profiles dir at /Users/sakshigajanashinde/.dbt
+[0m20:34:37.049967 [info ] [MainThread]: Using profiles.yml file at /Users/sakshigajanashinde/.dbt/profiles.yml
+[0m20:34:37.050097 [info ] [MainThread]: Using dbt_project.yml file at /Users/sakshigajanashinde/Dbt_pro/walmart_pro/dbt_project.yml
+[0m20:34:37.050223 [info ] [MainThread]: adapter type: databricks
+[0m20:34:37.050338 [info ] [MainThread]: adapter version: 1.12.6
+[0m20:34:37.091512 [info ] [MainThread]: Configuration:
+[0m20:34:37.091750 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:34:37.091872 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:34:37.091978 [info ] [MainThread]: Required dependencies:
+[0m20:34:37.092168 [debug] [MainThread]: Executing "git --help"
+[0m20:34:37.113902 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:34:37.114322 [debug] [MainThread]: STDERR: "b''"
+[0m20:34:37.114561 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:34:37.114756 [info ] [MainThread]: Connection:
+[0m20:34:37.114975 [info ] [MainThread]:   host: dbc-af667d42-1145.cloud.databricks.com
+[0m20:34:37.115099 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/19313bf19e28003c
+[0m20:34:37.115219 [info ] [MainThread]:   catalog: walmart_db
+[0m20:34:37.115325 [info ] [MainThread]:   schema: dbt_schema
+[0m20:34:37.115629 [info ] [MainThread]: Registered adapter: databricks=1.12.6
+[0m20:34:37.261399 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m20:34:37.261682 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m20:34:38.491704 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m20:34:38.492513 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m20:34:38.492916 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m20:34:38.493279 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m20:34:38.493759 [debug] [MainThread]: Using databricks connection "debug"
+[0m20:34:38.494101 [debug] [MainThread]: On debug: select 1 as id
+[0m20:34:38.494425 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:41:15.189042 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m20:41:15.214804 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 364, in run
+    debug_success = self._run_debug()
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 297, in _run_debug
+    return debug_task.run()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/task/debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/impl.py", line 1193, in debug_query
+    self.execute("select 1 as id")
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/impl.py", line 534, in execute
+    return super().execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 523, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 384, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 356, in add_query
+    handle: DatabricksHandle = connection.handle
+                               ^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 536, in open
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/connections.py", line 511, in connect
+    conn = DatabricksHandle.from_connection_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/dbt/adapters/databricks/handle.py", line 280, in from_connection_args
+    conn = dbsql.connect(**conn_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/__init__.py", line 93, in connect
+    return Connection(server_hostname, http_path, access_token, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/client.py", line 332, in __init__
+    self.session.open()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/session.py", line 302, in open
+    self._session_id = self.backend.open_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 603, in open_session
+    response = self.make_request(self._client.OpenSession, open_session_req)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 516, in make_request
+    response_or_error_info = attempt_request(attempt)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/backend/thrift_backend.py", line 422, in attempt_request
+    response = method(request)
+               ^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 204, in OpenSession
+    self.send_OpenSession(req)
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 213, in send_OpenSession
+    self._oprot.trans.flush()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/databricks/sql/auth/thrift_http_client.py", line 195, in flush
+    self.__resp = self.__pool.request(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  [Previous line repeated 7 more times]
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 850, in urlopen
+    retries.sleep()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 399, in sleep
+    self._sleep_backoff()
+  File "/Users/sakshigajanashinde/Dbt_pro/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 383, in _sleep_backoff
+    time.sleep(backoff)
+KeyboardInterrupt
+
+[0m20:41:15.240493 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 695.46576, "process_in_blocks": "0", "process_kernel_time": 0.513775, "process_mem_max_rss": "237355008", "process_out_blocks": "0", "process_user_time": 1.410915}
+[0m20:41:15.241786 [debug] [MainThread]: Command `dbt init` failed at 20:41:15.241702 after 695.47 seconds
+[0m20:41:15.242321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cda1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122007d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c1f410>]}
+[0m20:41:15.243074 [debug] [MainThread]: Flushing usage events
+[0m20:41:16.451548 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:48:46.160010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042e6010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107250d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107276690>]}
+
+
+============================== 20:48:46.162439 | 54248b74-436b-4a14-90ec-1740efe16d75 ==============================
+[0m20:48:46.162439 [info ] [MainThread]: Running with dbt=1.12.5
+[0m20:48:46.162713 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'target_path': 'None', 'no_print': 'None', 'hints_enabled': 'True', 'version_check': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'printer_width': '80', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'empty': 'None', 'quiet': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'log_path': 'logs', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'debug': 'False'}
+[0m20:48:46.171958 [info ] [MainThread]: dbt version: 1.12.5
+[0m20:48:46.172195 [info ] [MainThread]: python version: 3.11.0
+[0m20:48:46.172335 [info ] [MainThread]: python path: /Users/sakshigajanashinde/Dbt_pro/.venv/bin/python
+[0m20:48:46.172454 [info ] [MainThread]: os info: macOS-26.7.1-arm64-arm-64bit
+[0m20:48:46.176443 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DATABRICKS_TOKEN'
+[0m20:48:46.178852 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.070965044, "process_in_blocks": "0", "process_kernel_time": 0.134265, "process_mem_max_rss": "118161408", "process_out_blocks": "0", "process_user_time": 0.567237}
+[0m20:48:46.179094 [debug] [MainThread]: Command `dbt debug` failed at 20:48:46.179053 after 0.07 seconds
+[0m20:48:46.179263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10729b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10729bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10724fd90>]}
+[0m20:48:46.179426 [debug] [MainThread]: Flushing usage events
+[0m20:48:47.322950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:52:14.211042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d88d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097891d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096c0910>]}
+
+
+============================== 00:52:14.213465 | e9017764-1ca9-42d0-8971-84f3dc6dc549 ==============================
+[0m00:52:14.213465 [info ] [MainThread]: Running with dbt=1.12.5
+[0m00:52:14.213733 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'use_colors': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'write_json': 'True', 'log_format': 'default', 'target_path': 'None', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'partial_parse': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt deps', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'empty': 'None', 'static_parser': 'True'}
+[0m00:52:14.214166 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sakshigajanashinde/Dbt_pro/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:52:14.216308 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.04806483, "process_in_blocks": "0", "process_kernel_time": 0.10942, "process_mem_max_rss": "115310592", "process_out_blocks": "0", "process_user_time": 0.530495}
+[0m00:52:14.216517 [debug] [MainThread]: Command `dbt deps` failed at 00:52:14.216480 after 0.05 seconds
+[0m00:52:14.216674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109820810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109842b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097834d0>]}
+[0m00:52:14.216820 [debug] [MainThread]: Flushing usage events
+[0m00:52:15.389577 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:24:42.805395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106139990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061eea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061efc90>]}
+
+
+============================== 03:24:42.807864 | 50d0d801-b87b-44ca-b2dc-dba8483cc1d5 ==============================
+[0m03:24:42.807864 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:24:42.808149 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'quiet': 'False', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'invocation_command': 'dbt clean', 'target_path': 'None', 'log_path': 'logs', 'introspect': 'True', 'log_format': 'default', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'empty': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'no_print': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m03:24:42.808605 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sakshigajanashinde/Dbt_pro/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m03:24:42.810596 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": false, "command_wall_clock_time": 0.047454417, "process_in_blocks": "0", "process_kernel_time": 0.138949, "process_mem_max_rss": "115490816", "process_out_blocks": "0", "process_user_time": 0.604744}
+[0m03:24:42.810801 [debug] [MainThread]: Command `dbt clean` failed at 03:24:42.810763 after 0.05 seconds
+[0m03:24:42.810958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106133510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106138810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10613b850>]}
+[0m03:24:42.811102 [debug] [MainThread]: Flushing usage events
+[0m03:24:43.950028 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:25:19.004823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10703fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070d4d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070fad10>]}
+
+
+============================== 03:25:19.007244 | edd06252-9ecf-40d3-938b-0602abe26104 ==============================
+[0m03:25:19.007244 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:25:19.007531 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'profiles_dir': '/Users/sakshigajanashinde/.dbt', 'invocation_command': 'dbt clean', 'printer_width': '80', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'introspect': 'True', 'version_check': 'True', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True', 'log_path': 'logs', 'debug': 'False', 'use_colors': 'True'}
+[0m03:25:19.007955 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sakshigajanashinde/Dbt_pro/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m03:25:19.009936 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": false, "command_wall_clock_time": 0.047613874, "process_in_blocks": "0", "process_kernel_time": 0.116653, "process_mem_max_rss": "115965952", "process_out_blocks": "0", "process_user_time": 0.559369}
+[0m03:25:19.010142 [debug] [MainThread]: Command `dbt clean` failed at 03:25:19.010104 after 0.05 seconds
+[0m03:25:19.010300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10711f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10711fd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107037a50>]}
+[0m03:25:19.010444 [debug] [MainThread]: Flushing usage events
+[0m03:25:20.241098 [debug] [MainThread]: An error was encountered while trying to flush usage events
