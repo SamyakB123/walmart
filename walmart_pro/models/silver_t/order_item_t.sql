@@ -1,13 +1,13 @@
 {{
     config(
     materialized='incremental',
-    unique_key='order_id'
+    unique_key='order_item_id'
 )}}
 
 select *,
   current_timestamp() as updated_at
 
-from {{ source('walmart_databricks', 'orders') }}
+from {{ source('walmart_databricks', 'order_items') }}
 
 where
  is_active = 'Y'
