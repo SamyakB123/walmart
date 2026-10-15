@@ -39,5 +39,12 @@ models:
     silver_b:
       +materialized: table
       +schema: silver_b
+
+    gold:
+      +materialized: table
+      +schema: gold
+      ephemeral:
+        +materialized: ephemeral
+       
  # models in `models/marketing/ will be built in the "*_marketing" schema
    
