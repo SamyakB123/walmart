@@ -1,0 +1,11 @@
+walmart_pro:
+  outputs:
+    dev:
+      catalog: walmart_db
+      host: dbc-af667d42-1145.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/19313bf19e28003c
+      schema: dbt_schema
+      threads: 1
+      token: '{{ env_var("DATABRICKS_TOKEN") }}'
+      type: databricks
+  target: dev

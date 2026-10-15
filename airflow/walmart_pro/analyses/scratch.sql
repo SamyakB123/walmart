@@ -1,0 +1,1 @@
+select * from {{ walmart_pro.ref('orders_t') }} where order_id is null
